@@ -1,0 +1,5 @@
+case_id,lighting_class,average_non_pem_load_w,average_pem_add_w,accepted_solar_w,net_load_w,battery_usable_after_margin_kwh,credited_regenerated_o2_lb,total_o2_lb,o2_demand_lb_per_hr,t_power_hr,t_oxygen_hr,baseline_conclusion
+D24,LC3,68,0,0,68,1.85,0.00,2.60,0.065,27.2,40.0,24_hr_defended_case_closes_analytically_with_power_as_primary_limiter
+S36,LC2,68,12,28,52,1.85,0.20,2.80,0.065,35.6,43.1,36_hr_mixed_light_stretch_case_is_plausible_only_with_strict_rescue_lean_posture
+S48,LC1,64,16,48,32,1.85,0.45,3.05,0.062,57.8,49.2,48_hr_favorable_sunlit_case_is_plausible_but_narrow_and_non_general
+O72,LC1,60,18,55,23,1.85,0.80,3.40,0.060,80.4,56.7,72_hr_does_not_close_as_a_baseline_claim

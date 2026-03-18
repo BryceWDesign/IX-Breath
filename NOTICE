@@ -1,0 +1,13 @@
+IX-Breath
+Copyright 2026 Bryce Lovell
+
+This repository contains original architecture, requirements, safety, validation,
+and design-synthesis material for IX-Breath, a rescue-biased regenerative portable
+life support system (PLSS) architecture study for delayed-ingress astronaut survival.
+
+Portions of the systems-engineering approach in this repository were developed from
+earlier concept exploration by Bryce Lovell. IX-Breath retains only the bounded,
+real-world engineering patterns explicitly documented in this repository.
+
+This NOTICE file is for attribution only and does not modify the Apache License,
+Version 2.0.

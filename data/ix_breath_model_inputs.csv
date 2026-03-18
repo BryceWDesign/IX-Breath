@@ -1,0 +1,23 @@
+```csv id="ixb11inputs"
+parameter,category,units,working_band,baseline_midpoint,notes
+battery_usable_energy,energy,kWh,1.8-2.2,2.0,usable_pack_energy_before_protected_margin
+protected_energy_margin,energy,kWh,0.1-0.2,0.15,held_back_for_protected_posture
+accepted_solar_lc1,power,W,50-90,variable,favorable_sunlit_average_accepted_offset
+accepted_solar_lc2,power,W,15-40,variable,mixed_light_average_accepted_offset
+accepted_solar_lc3,power,W,0,0,dark_or_eclipse
+nominal_average_load,power,W,95-120,106,non_PEM_pack_average
+conserve_average_load,power,W,70-90,84,non_PEM_pack_average
+rescue_average_load,power,W,60-80,79,non_PEM_pack_average
+rescue_lean_average_load,power,W,60-70,68,aggressive_survival_biased_posture
+critical_average_load,power,W,40-55,61,baseline_critical_posture_can_be_driven_lower_with_further_shedding
+safe_hold_average_load,power,W,35-50,53,latched_minimum_posture
+pem_limited_average_add,power,W,20-35,variable,intermittent_bounded_regeneration
+pem_enabled_average_add,power,W,45-70,variable,favorable_case_only
+primary_oxygen,consumable,lb,1.8-2.3,2.1,usable_primary_oxygen
+reserve_oxygen,consumable,lb,0.4-0.7,0.5,isolated_emergency_oxygen
+o2_demand_low_activity,consumable,lb_per_hr,0.055-0.075,0.065,working_model_input_not_validated_hardware_result
+sterile_reserve_water,consumable,lb,0.6-1.4,1.0,highest_confidence_PEM_feedstock
+qualified_recovered_water_24h,consumable,lb,0.2-0.8,variable,case_specific_conditioned_water_credit
+regen_specific_energy,energy,kWh_per_lb_o2,3.2-4.5,variable,working_system_level_input_band
+dry_mass_total,mass,lb,74-108,89,architecture_level_mass_band
+serviced_mass_total,mass,lb,78-114,95,architecture_level_mass_band_after_fill

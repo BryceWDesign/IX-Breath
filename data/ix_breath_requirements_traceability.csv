@@ -1,0 +1,82 @@
+requirement_id,category,summary,satisfied_by_docs,evidence_path,current_status
+IXB-REQ-001,mission_framing,rescue_biased_survivability_architecture_not_total_replacement,"docs/00_PROJECT_CHARTER.md; docs/03_MASTER_ARCHITECTURE.md; README.md","I;R",mapped
+IXB-REQ-002,mission_framing,delayed_ingress_and_separation_contingency_as_primary_use_case,"docs/00_PROJECT_CHARTER.md; docs/01_MISSION_REQUIREMENTS.md; docs/03_MASTER_ARCHITECTURE.md","I",mapped
+IXB-REQ-003,mission_framing,remain_backpack_class_and_not_depend_on_full_suit_redesign,"docs/00_PROJECT_CHARTER.md; docs/05_PACKAGING_ENVELOPE.md; docs/03_MASTER_ARCHITECTURE.md","I;A",mapped
+IXB-REQ-004,mission_framing,non_weapon_life_preserving_architecture_only,"docs/00_PROJECT_CHARTER.md; docs/04_DONOR_FEATURE_FILTER.md; README.md","I",mapped
+IXB-REQ-005,mission_framing,all_performance_statements_typed_and_bounded,"docs/00_PROJECT_CHARTER.md; docs/11_MODEL_BASELINE.md; README.md","I;R",mapped
+IXB-REQ-006,mission_framing,no_flight_or_operational_readiness_claims_without_evidence,"docs/00_PROJECT_CHARTER.md; docs/12_VALIDATION_AND_HAZARD_PLAN.md; README.md","I;R",mapped
+
+IXB-REQ-100,life_support,closed_breathing_gas_circulation_loop,"docs/03_MASTER_ARCHITECTURE.md; docs/08_LIFE_SUPPORT_CORE.md","I;T",mapped_planned_validation
+IXB-REQ-101,life_support,controlled_oxygen_makeup_capability,"docs/08_LIFE_SUPPORT_CORE.md; docs/06_REAL_WORLD_BOM.md","I;T",mapped_planned_validation
+IXB-REQ-102,life_support,backpack_class_co2_removal_function,"docs/08_LIFE_SUPPORT_CORE.md; docs/06_REAL_WORLD_BOM.md","I;T",mapped_planned_validation
+IXB-REQ-103,life_support,integrated_humidity_and_water_management,"docs/08_LIFE_SUPPORT_CORE.md; docs/09_THERMAL_RESOURCE_COUPLING.md; docs/06_REAL_WORLD_BOM.md","I;A;T",mapped_planned_validation
+IXB-REQ-104,life_support,isolated_emergency_oxygen_reserve,"docs/08_LIFE_SUPPORT_CORE.md; docs/06_REAL_WORLD_BOM.md; docs/10_FDIR_AND_STATE_MACHINE.md","I;T",mapped_planned_validation
+IXB-REQ-105,life_support,rescue_mode_strategy_preserves_emergency_oxygen_until_trigger,"docs/08_LIFE_SUPPORT_CORE.md; docs/10_FDIR_AND_STATE_MACHINE.md","A;I;T",mapped_planned_validation
+IXB-REQ-106,life_support,bounded_real_world_oxygen_regeneration_extension_path,"docs/08_LIFE_SUPPORT_CORE.md; docs/09_THERMAL_RESOURCE_COUPLING.md; docs/06_REAL_WORLD_BOM.md","I;A;T",mapped_planned_validation
+IXB-REQ-107,life_support,no_exotic_matter_element115_rf_primary_power_or_perpetual_motion_logic,"docs/00_PROJECT_CHARTER.md; docs/04_DONOR_FEATURE_FILTER.md; README.md","I",mapped
+IXB-REQ-108,life_support,manual_crew_accessible_emergency_breathing_support_path,"docs/08_LIFE_SUPPORT_CORE.md; docs/10_FDIR_AND_STATE_MACHINE.md","I;D",mapped_planned_validation
+IXB-REQ-109,life_support,loop_pressure_oxygen_and_co2_awareness_for_fault_detection,"docs/08_LIFE_SUPPORT_CORE.md; docs/06_REAL_WORLD_BOM.md","I;T",mapped_planned_validation
+IXB-REQ-110,life_support,life_preserving_fallback_mode_with_only_essential_functions_energized,"docs/07_POWER_CONTINUITY_SPINE.md; docs/08_LIFE_SUPPORT_CORE.md; docs/10_FDIR_AND_STATE_MACHINE.md","A;I;T",mapped_planned_validation
+IXB-REQ-111,life_support,document_life_critical_vs_noncritical_breathing_functions,"docs/03_MASTER_ARCHITECTURE.md; docs/08_LIFE_SUPPORT_CORE.md","I",mapped
+IXB-REQ-112,life_support,water_conditioning_before_regeneration_credit,"docs/08_LIFE_SUPPORT_CORE.md; docs/09_THERMAL_RESOURCE_COUPLING.md; docs/06_REAL_WORLD_BOM.md","I;A;T",mapped_planned_validation
+
+IXB-REQ-200,power,primary_electrical_energy_storage_source,"docs/07_POWER_CONTINUITY_SPINE.md; docs/06_REAL_WORLD_BOM.md","I;T",mapped_planned_validation
+IXB-REQ-201,power,fast_response_buffer_for_transients_and_pulsed_loads,"docs/07_POWER_CONTINUITY_SPINE.md; docs/06_REAL_WORLD_BOM.md","I;T",mapped_planned_validation
+IXB-REQ-202,power,controlled_source_combining_and_source_isolation,"docs/07_POWER_CONTINUITY_SPINE.md; docs/06_REAL_WORLD_BOM.md","I;T",mapped_planned_validation
+IXB-REQ-203,power,precharge_soft_start_inrush_control,"docs/07_POWER_CONTINUITY_SPINE.md; docs/06_REAL_WORLD_BOM.md","I;T",mapped_planned_validation
+IXB-REQ-204,power,branch_level_protection_for_critical_and_noncritical_loads,"docs/07_POWER_CONTINUITY_SPINE.md; docs/06_REAL_WORLD_BOM.md","I;T",mapped_planned_validation
+IXB-REQ-205,power,load_shedding_hierarchy_favors_life_support,"docs/07_POWER_CONTINUITY_SPINE.md; docs/10_FDIR_AND_STATE_MACHINE.md; docs/09_THERMAL_RESOURCE_COUPLING.md","A;I;T",mapped_planned_validation
+IXB-REQ-206,power,no_tribo_piezo_rf_or_similar_primary_life_support_power,"docs/04_DONOR_FEATURE_FILTER.md; docs/07_POWER_CONTINUITY_SPINE.md; README.md","I",mapped
+IXB-REQ-207,power,solar_path_if_used_is_only_condition_dependent_supplemental_power,"docs/07_POWER_CONTINUITY_SPINE.md; docs/09_THERMAL_RESOURCE_COUPLING.md; docs/11_MODEL_BASELINE.md","I;A",mapped_modeled
+IXB-REQ-208,power,safe_dump_or_isolation_of_unsafe_stored_energy,"docs/07_POWER_CONTINUITY_SPINE.md; docs/06_REAL_WORLD_BOM.md","I;T",mapped_planned_validation
+IXB-REQ-209,power,preserve_enough_state_awareness_during_derated_operation,"docs/07_POWER_CONTINUITY_SPINE.md; docs/10_FDIR_AND_STATE_MACHINE.md","A;I;T",mapped_planned_validation
+IXB-REQ-210,power,critical_sensors_remain_powered_or_gracefully_degraded_during_bus_disturbance,"docs/07_POWER_CONTINUITY_SPINE.md; docs/10_FDIR_AND_STATE_MACHINE.md; docs/08_LIFE_SUPPORT_CORE.md","A;I;T",mapped_planned_validation
+
+IXB-REQ-300,thermal,defined_thermal_control_strategy,"docs/09_THERMAL_RESOURCE_COUPLING.md; docs/06_REAL_WORLD_BOM.md","I;A;T",mapped_planned_validation
+IXB-REQ-301,thermal,identify_thermally_sensitive_elements,"docs/09_THERMAL_RESOURCE_COUPLING.md; docs/05_PACKAGING_ENVELOPE.md","I;A",mapped
+IXB-REQ-302,thermal,at_least_one_thermal_derating_path,"docs/09_THERMAL_RESOURCE_COUPLING.md; docs/10_FDIR_AND_STATE_MACHINE.md","A;I;T",mapped_planned_validation
+IXB-REQ-303,thermal,no_free_heat_rejection_or_exotic_cooling_claims,"docs/09_THERMAL_RESOURCE_COUPLING.md; README.md","I",mapped
+IXB-REQ-304,thermal,deployables_treated_as_packaging_and_failure_mode_drivers,"docs/05_PACKAGING_ENVELOPE.md; docs/09_THERMAL_RESOURCE_COUPLING.md","I;A",mapped
+IXB-REQ-305,thermal,define_behavior_across_sunlit_mixed_and_eclipse_cases,"docs/09_THERMAL_RESOURCE_COUPLING.md; docs/11_MODEL_BASELINE.md","A",mapped_modeled
+IXB-REQ-306,thermal,define_fallback_when_thermal_capacity_is_insufficient,"docs/09_THERMAL_RESOURCE_COUPLING.md; docs/10_FDIR_AND_STATE_MACHINE.md","A;I;T",mapped_planned_validation
+
+IXB-REQ-400,packaging,remain_plausibly_wearable_as_backpack_class_unit,"docs/05_PACKAGING_ENVELOPE.md; docs/03_MASTER_ARCHITECTURE.md","I;A",mapped
+IXB-REQ-401,packaging,track_height_width_thickness_and_center_of_gravity,"docs/05_PACKAGING_ENVELOPE.md","I;A",mapped
+IXB-REQ-402,packaging,no_silent_acceptance_of_obviously_impractical_bulk_growth,"docs/05_PACKAGING_ENVELOPE.md; docs/11_MODEL_BASELINE.md","I;A",mapped_modeled
+IXB-REQ-403,packaging,define_preliminary_package_envelope_before_detailed_cad,"docs/05_PACKAGING_ENVELOPE.md","I",mapped
+IXB-REQ-404,packaging,identify_rescue_only_appendages_vs_nominal_geometry,"docs/05_PACKAGING_ENVELOPE.md","I",mapped
+IXB-REQ-405,packaging,maintain_clean_backpack_vs_pressure_garment_function_split,"docs/03_MASTER_ARCHITECTURE.md; docs/08_LIFE_SUPPORT_CORE.md","I",mapped
+IXB-REQ-406,packaging,identify_don_doff_airlock_and_mobility_impacts,"docs/05_PACKAGING_ENVELOPE.md","A;I",mapped
+
+IXB-REQ-500,fdir,include_top_level_fdir_concept,"docs/10_FDIR_AND_STATE_MACHINE.md","I;A;T",mapped_planned_validation
+IXB-REQ-501,fdir,identify_fail_safe_or_fail_operational_response_for_major_subsystems,"docs/10_FDIR_AND_STATE_MACHINE.md; docs/07_POWER_CONTINUITY_SPINE.md; docs/08_LIFE_SUPPORT_CORE.md; docs/09_THERMAL_RESOURCE_COUPLING.md","I;A;T",mapped_planned_validation
+IXB-REQ-502,fdir,include_defined_state_model_with_nominal_conserve_rescue_critical_safe_hold_service,"docs/10_FDIR_AND_STATE_MACHINE.md","I;A;T;D",mapped_planned_validation
+IXB-REQ-503,fdir,latched_behavior_for_major_faults,"docs/10_FDIR_AND_STATE_MACHINE.md","I;A;T",mapped_planned_validation
+IXB-REQ-504,fdir,objective_event_logging_for_reconstruction,"docs/10_FDIR_AND_STATE_MACHINE.md; docs/12_VALIDATION_AND_HAZARD_PLAN.md","I;R;T",mapped_planned_validation
+IXB-REQ-505,fdir,watchdog_or_supervisory_logic_independent_of_main_control,"docs/10_FDIR_AND_STATE_MACHINE.md; docs/06_REAL_WORLD_BOM.md","I;T",mapped_planned_validation
+IXB-REQ-506,fdir,no_single_controller_fault_assumed_unlikely_as_safety_argument,"docs/10_FDIR_AND_STATE_MACHINE.md; docs/12_VALIDATION_AND_HAZARD_PLAN.md","I;A",mapped
+IXB-REQ-507,fdir,crew_alerts_for_oxygen_co2_power_derate_thermal_and_safe_hold,"docs/10_FDIR_AND_STATE_MACHINE.md; docs/08_LIFE_SUPPORT_CORE.md; docs/09_THERMAL_RESOURCE_COUPLING.md","I;D;T",mapped_planned_validation
+IXB-REQ-508,fdir,crew_understandable_control_posture_under_stress,"docs/10_FDIR_AND_STATE_MACHINE.md; README.md","I;D",mapped_planned_validation
+IXB-REQ-509,fdir,define_failures_that_force_safe_hold_vs_rescue_vs_degraded_nominal,"docs/10_FDIR_AND_STATE_MACHINE.md","A;I;T",mapped_planned_validation
+
+IXB-REQ-600,sensing_data,identify_minimum_critical_sensor_set,"docs/08_LIFE_SUPPORT_CORE.md; docs/06_REAL_WORLD_BOM.md","I;T",mapped_planned_validation
+IXB-REQ-601,sensing_data,separate_sensor_critical_integrity_from_convenience_telemetry,"docs/07_POWER_CONTINUITY_SPINE.md; docs/10_FDIR_AND_STATE_MACHINE.md","I;A;T",mapped_planned_validation
+IXB-REQ-602,sensing_data,readiness_and_sustainment_track_calibration_inspection_and_life_limited_parts,"docs/03_MASTER_ARCHITECTURE.md; docs/06_REAL_WORLD_BOM.md; docs/12_VALIDATION_AND_HAZARD_PLAN.md","I;R;D",mapped_planned_validation
+IXB-REQ-603,sensing_data,objective_evidence_of_readiness_before_eva,"docs/12_VALIDATION_AND_HAZARD_PLAN.md; README.md","I;R;D",mapped_planned_validation
+IXB-REQ-604,sensing_data,objective_evidence_of_degradation_recorded_after_eva_or_fault,"docs/10_FDIR_AND_STATE_MACHINE.md; docs/12_VALIDATION_AND_HAZARD_PLAN.md","I;R;D;T",mapped_planned_validation
+IXB-REQ-605,sensing_data,no_informal_operator_memory_as_only_protection_against_creeping_degradation,"docs/12_VALIDATION_AND_HAZARD_PLAN.md; README.md","I;R",mapped
+IXB-REQ-606,sensing_data,identify_consumables_and_life_limited_parts_material_to_rescue_survivability,"docs/06_REAL_WORLD_BOM.md; docs/12_VALIDATION_AND_HAZARD_PLAN.md","I;R",mapped
+
+IXB-REQ-700,analysis_model,include_mass_power_consumables_and_survivability_model_before_strong_endurance_claim,"docs/11_MODEL_BASELINE.md","A",mapped_modeled
+IXB-REQ-701,analysis_model,evaluate_defended_stretch_and_outer_edge_cases,"docs/11_MODEL_BASELINE.md","A",mapped_modeled
+IXB-REQ-702,analysis_model,treat_sunlit_and_eclipse_cases_separately,"docs/09_THERMAL_RESOURCE_COUPLING.md; docs/11_MODEL_BASELINE.md","A",mapped_modeled
+IXB-REQ-703,analysis_model,no_incompatible_assumptions_combined_to_fake_endurance,"docs/09_THERMAL_RESOURCE_COUPLING.md; docs/11_MODEL_BASELINE.md","A",mapped_modeled
+IXB-REQ-704,analysis_model,distinguish_architecture_supports_analysis_from_proven_hardware,"docs/11_MODEL_BASELINE.md; README.md","A;I",mapped_modeled
+IXB-REQ-705,analysis_model,identify_evidence_needed_to_move_claims_from_architecture_to_test_backed,"docs/12_VALIDATION_AND_HAZARD_PLAN.md","A;R",mapped
+
+IXB-REQ-800,validation_seriousness,include_validation_plan_mapping_claims_to_methods,"docs/12_VALIDATION_AND_HAZARD_PLAN.md","I;A",mapped
+IXB-REQ-801,validation_seriousness,include_explicit_donor_feature_keep_reject_record,"docs/04_DONOR_FEATURE_FILTER.md","I",mapped
+IXB-REQ-802,validation_seriousness,include_honest_hazard_analysis_fmea_before_serious_summary_claims,"docs/12_VALIDATION_AND_HAZARD_PLAN.md; README.md","I;A;R",mapped
+IXB-REQ-803,validation_seriousness,no_fake_maturity_artifacts_or_placeholder_proof,"docs/00_PROJECT_CHARTER.md; docs/12_VALIDATION_AND_HAZARD_PLAN.md; README.md","I",mapped
+IXB-REQ-804,validation_seriousness,document_unresolved_technical_risks_instead_of_hiding_them,"docs/03_MASTER_ARCHITECTURE.md; docs/11_MODEL_BASELINE.md; docs/12_VALIDATION_AND_HAZARD_PLAN.md","I;A",mapped
+IXB-REQ-805,validation_seriousness,preserve_distinction_between_serious_architecture_proposal_and_proven_engineering_product,"docs/00_PROJECT_CHARTER.md; docs/11_MODEL_BASELINE.md; docs/12_VALIDATION_AND_HAZARD_PLAN.md; README.md","I;R",mapped
